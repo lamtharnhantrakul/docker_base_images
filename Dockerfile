@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y cmake
 RUN conda install -c conda-forge librosa  && \
 
 # Install CPU version of Tensorflow
-pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.3.0-cp36-cp36m-linux_x86_64.whl
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.3.0-cp36-cp36m-linux_x86_64.whl
 
 # To aid visualization of process, display a progress bar
 RUN pip install tqdm
